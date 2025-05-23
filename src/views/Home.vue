@@ -160,69 +160,96 @@
 </template>
 
 <script setup lang="ts">
-import { Code, Database, Palette, Layout, ChevronRight, ArrowRight, Github, ExternalLink, Star } from 'lucide-vue-next';
+import { Code, Database, Palette,Globe, Layout, ChevronRight, ArrowRight, Github, ExternalLink, Star, Layers, Server, Briefcase, Smartphone, FileText, Calendar } from 'lucide-vue-next';
 import SectionTitle from '../components/layout/SectionTitle.vue';
 import Footer from '../components/layout/Footer.vue';
 
 const services = [
   {
-    title: 'Frontend Development',
-    description: 'Building responsive, accessible, and performant user interfaces with modern frameworks.',
-    icon: Layout
-  },
-  {
-    title: 'Backend Development',
-    description: 'Creating robust, scalable, and secure server-side applications and APIs.',
-    icon: Database
-  },
-  {
-    title: 'UI/UX Design',
-    description: 'Designing intuitive user experiences and visually appealing interfaces.',
-    icon: Palette
-  },
-  {
-    title: 'Full-Stack Solutions',
-    description: 'End-to-end development services from concept to deployment.',
+    title: 'Full-Stack Development',
+    description: 'Complete development of web and mobile applications, from intuitive frontends to robust and scalable backends.',
     icon: Code
+  },
+  {
+    title: 'Custom Software Solutions',
+    description: 'Tailor-made platforms and SaaS products built to match specific business needs, with focus on performance and maintainability.',
+    icon: Layers
+  },
+  {
+    title: 'DevOps & Cloud Infrastructure',
+    description: 'Deployment automation, containerization, and infrastructure management with Docker, Kubernetes, and cloud providers.',
+    icon: Server
+  },
+  {
+    title: 'Freelance Tech Consulting',
+    description: 'Strategic support for startups and companies, helping define technical paths, MVP scope, and system architecture.',
+    icon: Briefcase
   }
 ];
+
 
 const featuredProjects = [
   {
     title: 'Financial Dashboard',
-    category: 'Vue.js',
-    description: 'A real-time financial analytics platform with interactive data visualizations for investment firms.',
+    category: 'Vue.js + Node.js',
+    description: 'Real-time dashboard for financial analytics and KPI tracking, with data visualization and multi-user access.',
     icon: Layout
   },
   {
     title: 'E-commerce Platform',
-    category: 'Next.js',
-    description: 'Scalable headless e-commerce solution with personalized recommendations and AI-powered search.',
+    category: 'Next.js + Strapi',
+    description: 'Headless e-commerce with CMS integration, advanced filtering, and AI-powered search and product recommendations.',
     icon: Database
+  },
+  {
+    title: 'Mobile App for Logistics',
+    category: 'React Native',
+    description: 'Cross-platform mobile app for fleet tracking and delivery route optimization, synced with backend in real-time.',
+    icon: Smartphone
+  },
+  {
+    title: 'Custom CMS for Marketing Agency',
+    category: 'Ruby on Rails',
+    description: 'Tailor-made content management system for landing pages, SEO-friendly, with user role management.',
+    icon: FileText
+  },
+  {
+    title: 'SaaS for Online Bookings',
+    category: 'Vue.js + Firebase',
+    description: 'Booking system for service providers with calendar sync, payment gateway, and automated notifications.',
+    icon: Calendar
+  },
+  {
+    title: 'Institutional Website for Law Firm',
+    category: 'React.js + Node.js',
+    description: 'Corporate website with custom layout, blog integration, and optimized performance for SEO.',
+    icon: Globe
   }
 ];
 
+
 const testimonials = [
   {
-    name: 'Alex Johnson',
-    position: 'CTO, TechNova',
-    avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600',
-    text: 'Working with this developer was a game-changer for our company. Their technical expertise and attention to detail exceeded our expectations.',
+    name: 'Rafael Martins',
+    position: 'CTO, AgroTech Solutions',
+    avatar: 'https://www.gravatar.com/avatar/?d=mp',
+    text: 'High technical standards and a strong focus on what really matters. The project was delivered with excellence and exceeded our expectations.',
     rating: 5
   },
   {
-    name: 'Sarah Williams',
-    position: 'Product Manager, FinEdge',
-    avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600',
-    text: 'Exceptional problem-solving skills and an ability to deliver complex projects on time. We\'ve already started planning our next collaboration.',
-    rating: 5
-  },
-  {
-    name: 'Michael Chen',
-    position: 'Founder, DataViz',
-    avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600',
-    text: 'Their technical knowledge and communication skills made the development process smooth and efficient. Highly recommended!',
+    name: 'Lívia Andrade',
+    position: 'Co-founder, VidaDigital',
+    avatar: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=600',
+    text: 'Extremely committed, brought practical solutions from day one. Our app came to life much faster than we expected.',
     rating: 4
+  },
+  {
+    name: 'Scripter',
+    position: 'Music Producer, Scripter Music',
+    avatar: '../../media/testimonials/scripter.jpeg',
+    text: 'Anderson was an excellent professional. He helped a lot with building the website and always responded quickly. I highly recommend him.',
+    rating: 5
   }
 ];
+
 </script>

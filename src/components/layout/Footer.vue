@@ -13,16 +13,16 @@
             Building innovative digital experiences that push boundaries and deliver exceptional value.
           </p>
           <div class="flex space-x-4 mt-6">
-            <a href="#" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary transition-colors duration-300">
+            <a href="https://www.linkedin.com/in/anderson-filho-103a1a254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BSbzV7oAYT%2F6Kd7QPe09yVA%3D%3D" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary transition-colors duration-300">
               <Linkedin class="w-5 h-5" />
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary transition-colors duration-300">
+            <a href="https://github.com/andifilhohub" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary transition-colors duration-300">
               <Github class="w-5 h-5" />
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary transition-colors duration-300">
-              <Twitter class="w-5 h-5" />
+            <a href="https://www.instagram.com/andim.js/" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary transition-colors duration-300">
+              <Instagram class="w-5 h-5" />
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary transition-colors duration-300">
+            <a href="mailto:andersonfilho.contato@outlook.com" class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-primary transition-colors duration-300">
               <Mail class="w-5 h-5" />
             </a>
           </div>
@@ -49,20 +49,16 @@
         </div>
       </div>
       
-      <div class="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <div class="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-center items-center">
         <p>© {{ new Date().getFullYear() }} Dev Anderson Filho . All rights reserved.</p>
-        <p class="mt-4 md:mt-0">
-          <a href="#" class="hover:text-white transition-colors">
-            Made with <span class="text-primary">♥</span>
-          </a>
-        </p>
+        
       </div>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-import { Code, Linkedin, Github, Twitter, Mail } from 'lucide-vue-next';
+import { Code, Linkedin, Github, Instagram, Mail,  } from 'lucide-vue-next';
 
 const navItems = [
   { name: 'Home', path: '/' },

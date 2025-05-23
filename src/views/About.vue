@@ -13,7 +13,7 @@
               <div class="w-64 h-64 rounded-3xl bg-primary opacity-10 absolute -top-4 -left-4"></div>
               <div class="w-64 h-64 rounded-3xl bg-accent opacity-10 absolute -bottom-4 -right-4"></div>
               <img 
-                src="https://images.pexels.com/photos/5483064/pexels-photo-5483064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="/media/profileme/profile.jpg" 
                 alt="Professional Portrait" 
                 class="w-64 h-64 object-cover rounded-3xl border-4 border-border shadow-xl relative"
               />
@@ -22,12 +22,14 @@
           
           <div class="md:w-2/3 md:pl-12">
             <h3 class="text-3xl font-semibold mb-6 text-white">Senior Full-Stack Developer & Tech Consultant</h3>
-            <p class="mb-6 leading-relaxed">
-              With over 8 years of experience in the tech industry, I've had the privilege of working with startups and Fortune 500 companies to build scalable, performant web applications that drive business growth. My approach combines technical excellence with strategic thinking to deliver solutions that are both innovative and practical.
-            </p>
+            <p class="mb-1 leading-relaxed">
+I’m a software developer with a strong focus on turning ideas into well-crafted, scalable digital products. I started coding in 2015 by automating spreadsheets for clients and quickly evolved into building full-stack systems — including websites, mobile and web apps, and SaaS platforms for businesses across different industries. </p>
+<p class="mb-1 leading-relaxed">
+I approach development with a problem-solving mindset: I like to understand the real need, design efficient architectures, and deliver solutions that are clean, maintainable, and scalable. I’m hands-on, pragmatic, and always committed to quality. </p>
+<p class="mb-1 leading-relaxed">
+As a freelancer, I’ve worked directly with clients, led development cycles, and managed everything from backend logic to cloud infrastructure and deployment. I’m used to working autonomously, adapting to different workflows, and communicating effectively in remote environments.            </p>
             <p class="mb-8 leading-relaxed">
-              I specialize in JavaScript ecosystems, particularly Vue and Node.js, but I'm passionate about learning new technologies that can help solve complex problems. When I'm not coding, you can find me mentoring junior developers, speaking at tech conferences, or exploring the latest in AI and machine learning.
-            </p>
+I’m currently pursuing a degree in Computer Engineering at a leading public university in Brazil, and I continue to blend academic knowledge with practical experience. I see technology as a tool to solve real-world problems — and that’s the mindset I bring to every collaboration.            </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div v-for="(stat, index) in stats" :key="index" class="flex items-center">
@@ -124,60 +126,75 @@ import SectionTitle from '../components/layout/SectionTitle.vue';
 import Footer from '../components/layout/Footer.vue';
 
 const stats = [
-  { title: 'Experience', value: '8+ Years', icon: Briefcase },
+  { title: 'Experience', value: '9+ Years', icon: Briefcase },
   { title: 'Projects', value: '50+ Completed', icon: CheckCircle },
   { title: 'Clients', value: '30+ Worldwide', icon: Users },
-  { title: 'Awards', value: '5 Industry Awards', icon: Award }
+  { title: 'Awards', value: '2 Industry Awards', icon: Award }
 ];
 
 const experience = [
   {
     title: 'Senior Full-Stack Developer',
-    company: 'TechNova Solutions',
-    period: '2020 - Present',
+    company: 'DrBen',
+    period: '2023 - Present',
     description: 'Lead developer for enterprise-level web applications, managing a team of developers and architecting scalable solutions for clients across fintech, healthcare, and e-commerce sectors.',
     technologies: ['Vue.js', 'Node.js', 'GraphQL', 'AWS', 'Docker', 'Kubernetes']
   },
   {
-    title: 'Full-Stack Developer',
-    company: 'Digital Innovations',
-    period: '2017 - 2020',
-    description: 'Developed and maintained web applications for multiple clients, focusing on performance optimization and integration with third-party APIs.',
-    technologies: ['React', 'Express.js', 'PostgreSQL', 'Redis', 'CircleCI']
+    title: 'Freelance Software Engineer',
+    company: 'Self-employed',
+    period: '2015 - Present',
+    description: 'Designed, developed, and deployed custom digital solutions for clients across a variety of industries, including healthcare, education, e-commerce, and logistics. Projects ranged from static websites to scalable SaaS platforms and mobile applications. Also handled infrastructure, CI/CD, and cloud deployments.',
+    technologies: ['JavaScript', 'Node.js', 'Vue.js', 'React', 'PostgreSQL', 'Docker', 'AWS', 'Firebase']
   },
   {
-    title: 'Frontend Developer',
-    company: 'WebCraft Studios',
-    period: '2015 - 2017',
-    description: 'Created responsive and accessible user interfaces for various web applications, collaborating closely with designers and backend developers.',
-    technologies: ['Angular', 'Sass', 'JavaScript', 'HTML5', 'CSS3']
+    title: 'Lead Developer – Custom ERP for Logistics Company',
+    company: 'Freelance Project',
+    period: '2022 - 2023',
+    description: 'Architected and developed a complete ERP system to manage fleet logistics, client invoicing, and delivery routes. The system improved operational efficiency and reduced manual processes by over 60%.',
+    technologies: ['Vue 3', 'Node.js', 'PostgreSQL', 'Redis', 'Docker']
+  },
+  {
+    title: 'Full-Stack Developer – E-learning Platform',
+    company: 'Freelance Project',
+    period: '2021',
+    description: 'Built a fully responsive e-learning platform with user management, progress tracking, video streaming, and admin dashboards. The platform supported over 5,000 users and included custom CMS features.',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Firebase', 'Stripe']
+  },
+  {
+    title: 'DevOps Consultant – SaaS Startup',
+    company: 'Freelance Contract',
+    period: '2020',
+    description: 'Set up infrastructure-as-code for a startup’s SaaS platform. Implemented CI/CD pipelines, containerized services with Docker, and managed production deployments using Kubernetes and AWS.',
+    technologies: ['Docker', 'Kubernetes', 'AWS', 'GitHub Actions', 'Terraform']
   }
 ];
 
 const education = [
   {
-    degree: 'Master of Science in Computer Science',
-    institution: 'Stanford University',
-    year: '2015',
-    description: 'Specialized in web technologies and distributed systems, with a thesis on scalable real-time web applications.'
+    degree: 'Bachelor’s Degree in Computer Engineering',
+    institution: 'Federal University of Uberlândia (UFU)',
+    year: 'Ongoing',
+    description: 'Comprehensive training in computer systems, electronics, and software engineering, with a strong focus on solving real-world problems through technology.'
   },
   {
-    degree: 'Bachelor of Engineering in Software Engineering',
-    institution: 'MIT',
-    year: '2013',
-    description: 'Focus on software architecture, data structures, and algorithms. Graduated with honors.'
+    degree: 'Full Stack Web Development Certification',
+    institution: 'Rocketseat',
+    year: '2022',
+    description: 'Intensive bootcamp focused on modern web development using JavaScript, Node.js, React, and DevOps best practices.'
   },
   {
-    degree: 'AWS Certified Solutions Architect',
-    institution: 'Amazon Web Services',
-    year: '2019',
-    description: 'Professional certification for designing distributed systems on AWS.'
+    degree: 'Software Architecture Specialization',
+    institution: 'Alura',
+    year: '2023',
+    description: 'Training in scalable software design, SOLID principles, microservices, and continuous integration strategies.'
   },
   {
-    degree: 'Google Cloud Certified Professional',
-    institution: 'Google Cloud Platform',
+    degree: 'DevOps & Cloud Computing Program',
+    institution: 'Digital Innovation One (DIO)',
     year: '2021',
-    description: 'Expert-level recognition for cloud architecture and deployment.'
+    description: 'Hands-on training in containerization with Docker, orchestration using Kubernetes, and cloud deployment on AWS and GCP.'
   }
 ];
+
 </script>

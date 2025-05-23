@@ -101,8 +101,8 @@
                   </div>
                   <div>
                     <h4 class="font-medium text-white">Email</h4>
-                    <a href="mailto:contact@portfolio.com" class="text-content-secondary hover:text-primary transition-colors">
-                      contact@portfolio.com
+                    <a href="mailto:andersonfilho.contato@outlook.com" class="text-content-secondary hover:text-primary transition-colors">
+                      andersonfilho.contato@outlook.com
                     </a>
                   </div>
                 </div>
@@ -113,8 +113,8 @@
                   </div>
                   <div>
                     <h4 class="font-medium text-white">Phone</h4>
-                    <a href="tel:+1234567890" class="text-content-secondary hover:text-primary transition-colors">
-                      +1 (234) 567-890
+                    <a href="tel:+5534996853220" class="text-content-secondary hover:text-primary transition-colors">
+                      +55 (34) 99685-3220
                     </a>
                   </div>
                 </div>
@@ -125,7 +125,7 @@
                   </div>
                   <div>
                     <h4 class="font-medium text-white">Location</h4>
-                    <p class="text-content-secondary">San Francisco, CA</p>
+                    <p class="text-content-secondary">Uberlândia, BR</p>
                   </div>
                 </div>
               </div>
@@ -133,16 +133,14 @@
               <div class="mt-10">
                 <h4 class="font-medium mb-4 text-white">Connect With Me</h4>
                 <div class="flex space-x-4">
-                  <a href="#" class="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                  <a href="https://www.linkedin.com/in/anderson-filho-103a1a254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BSbzV7oAYT%2F6Kd7QPe09yVA%3D%3D" class="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                     <Linkedin />
                   </a>
-                  <a href="#" class="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors">
-                    <Twitter />
-                  </a>
-                  <a href="#" class="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center hover:bg-gray-700 hover:text-white transition-colors">
+                  
+                  <a href="https://github.com/andifilhohub" class="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center hover:bg-gray-700 hover:text-white transition-colors">
                     <Github />
                   </a>
-                  <a href="#" class="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center hover:bg-pink-500 hover:text-white transition-colors">
+                  <a href="https://www.instagram.com/andim.js/" class="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center hover:bg-pink-500 hover:text-white transition-colors">
                     <Instagram />
                   </a>
                 </div>
@@ -200,6 +198,7 @@ import { ref } from 'vue';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Instagram, CheckCircle, SendHorizontal, ChevronDown, Loader2 } from 'lucide-vue-next';
 import SectionTitle from '../components/layout/SectionTitle.vue';
 import Footer from '../components/layout/Footer.vue';
+import emailjs from 'emailjs-com';
 
 const form = ref({
   name: '',
@@ -257,27 +256,30 @@ const validateForm = () => {
   return isValid;
 };
 
-const handleSubmit = async () => {
+const handleSubmit = () => {
   if (!validateForm()) return;
-  
+
   isSubmitting.value = true;
-  
-  // Simulate API call
-  setTimeout(() => {
+
+  emailjs.send(
+    'service_bxzcc72',
+    'template_te9fvep',
+    {
+      name: form.value.name,
+      email: form.value.email,
+      subject: form.value.subject,
+      message: form.value.message
+    },
+    '9K1_lChrQ1nIqiaTx'
+  ).then(() => {
     isSubmitting.value = false;
     formSubmitted.value = true;
-    form.value = {
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    };
-    
-    // Hide success message after 5 seconds
-    setTimeout(() => {
-      formSubmitted.value = false;
-    }, 5000);
-  }, 1500);
+    form.value = { name: '', email: '', subject: '', message: '' };
+    setTimeout(() => (formSubmitted.value = false), 5000);
+  }).catch(() => {
+    isSubmitting.value = false;
+    alert('There was an error sending the message.');
+  });
 };
 
 const toggleFaq = (index) => {

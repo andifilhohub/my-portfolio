@@ -246,7 +246,7 @@ const testimonials = [
   {
     name: 'Scripter',
     position: 'Music Producer, Scripter Music',
-    avatar: '../../media/testimonials/scripter.jpeg',
+    avatar: '/media/testimonials/scripter.jpeg',
     text: 'Anderson was an excellent professional. He helped a lot with building the website and always responded quickly. I highly recommend him.',
     rating: 5
   }

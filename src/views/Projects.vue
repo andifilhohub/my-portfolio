@@ -113,7 +113,7 @@ const projects = [
     category: 'WhatsApp Messages',
     description: 'Evolution API began as a WhatsApp controller API based on CodeChat, which in turn implemented the Baileys library.',
     technologies: ['TypeScript', 'Others'],
-    image: '../../media/projects/evolution.png',
+    image: '/media/projects/evolution.png',
     links: {
       github: '#',
       demo: 'https://doc.evolution-api.com/v1/en/get-started/introduction'
@@ -125,7 +125,7 @@ const projects = [
     category: 'Productivity',
     description: 'Izing is a modern web application focused on enhancing productivity through intuitive task management and collaboration tools.',
     technologies: ['JavaScript', 'TypeScript', 'Vue', 'Sass', 'CSS', 'HTML', 'Other'],
-    image: '../../media/projects/izing.png',  
+    image: '/media/projects/izing.png',  
     links: {
       github: 'https://github.com/ldurans/izing.open.io.git',
       demo: 'https://izing.io/'
@@ -137,7 +137,7 @@ const projects = [
     category: 'Enterprise Resource Planning',
     description: 'ERPNext is an open-source, comprehensive ERP solution designed to manage all core business processes including accounting, inventory, sales, purchase, and human resources.',
     technologies: ['Python', 'JavaScript', 'MariaDB', 'HTML'],
-    image: '../../media/projects/erpnext.png',  
+    image: '/media/projects/erpnext.png',  
     links: {
       github: 'https://github.com/frappe/erpnext',
       demo: 'https://erpnext-demo.frappe.cloud/api/method/erpnext_demo.erpnext_demo.auth.login_demo'
@@ -149,7 +149,7 @@ const projects = [
     category: 'Enterprise',
     description: 'A simple web application to manage a lettuce greenhouse. It includes features for tracking raw material purchases, recording sales, managing product inventory, and visualizing the financial performance of the business.',
     technologies: ['Vue 3', 'Node.js', 'PostgreSQL', 'Redis', 'Mapbox', 'Docker'],
-    image: '../../media/projects/dashboardSys.jpeg',
+    image: '/media/projects/dashboardSys.jpeg',
     links: {
       github: '#',
       demo: '#'
@@ -161,7 +161,7 @@ const projects = [
     category: 'Landing Page',
     description: 'Página responsiva para fones Beats com design moderno e foco em conversão.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '../../media/projects/beats3.png',
+    image: '/media/projects/beats3.png',
     links: {
       github: 'https://github.com/andifilhohub/Landing-page-Beats-3',
       demo: 'https://headphone.hybware.com.br	'
@@ -173,7 +173,7 @@ const projects = [
     category: 'Landing Page',
     description: 'Página institucional elegante e responsiva para advogada ou escritório de advocacia.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '../../media/projects/advsite.png',
+    image: '/media/projects/advsite.png',
     links: {
       github: '#',
       demo: 'https://advtemplate.hybware.com.br'
@@ -185,7 +185,7 @@ const projects = [
     category: 'Landing Page',
     description: 'Portfólio responsivo e moderno para artista musical, com foco em apresentação de trabalhos e contato.',
     technologies: ['Vue 3', 'TypeScript.js', 'CSS', 'JavaScript'],
-    image: '../../media/projects/scriptermusic.png',
+    image: '/media/projects/scriptermusic.png',
     links: {
       github: 'https://github.com/andifilhohub/scriptermusic-website.git',
       demo: 'https://scriptermusic.com/'
@@ -197,7 +197,7 @@ const projects = [
   category: "Restaurante Italiano",
   description: "Website completo para restaurante italiano premium, com sistema de reservas, menu interativo e galeria de fotos.",
   technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "SwiperJS"],
-  image: "../../media/projects/pastacosi.png",
+  image: "/media/projects/pastacosi.png",
   links: {
     github: "https://github.com/andifilhohub/Pasta-Cosi-Restaurant-Website.git",
     demo: "https://corsi.hybware.com.br	"
@@ -214,7 +214,7 @@ const projects = [
     "JavaScript",
     "Font Awesome"
   ],
-  image: "../../media/projects/medicare.png",
+  image: "/media/projects/medicare.png",
   links: {
     github: "#",
     demo: "#"
@@ -226,7 +226,7 @@ const projects = [
     category: 'Institucional',
     description: 'Website moderno e completo para hospitais ou clínicas, com seções informativas e formulário de contato.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
-    image: '../../media/projects/doctorcares.png',
+    image: '/media/projects/doctorcares.png',
     links: {
       github: '#',
       demo: 'https://cares.hybware.com.br'
@@ -238,7 +238,7 @@ const projects = [
     category: 'Restaurante',
     description: 'Template responsivo para restaurantes, com menu digital e layout premium.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '../../media/projects/grilli.png',
+    image: '/media/projects/grilli.png',
     links: {
       github: '#',
       demo: 'https://grilli.hybware.com.br	'
@@ -250,7 +250,7 @@ const projects = [
     category: 'Restaurante Premium',
     description: 'Site premium para restaurantes de alto padrão com foco em acessibilidade e design refinado.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '../../media/projects/gourmet.png',
+    image: '/media/projects/gourmet.png',
     links: {
       github: '#',
       demo: 'https://gourmetprime.hybware.com.br'
@@ -262,7 +262,7 @@ const projects = [
   category: "Restaurante Premium",
   description: "Site premium para restaurantes de alto padrão com serviço de delivery, combinando design refinado e acessibilidade para uma experiência gastronômica exclusiva.",
   technologies: ["HTML", "CSS", "JavaScript"],
-  image: "../../media/projects/food.png",
+  image: "/media/projects/food.png",
   links: {
     github: "#",
     demo: "https://restaurant.hybware.com.br"
@@ -274,7 +274,7 @@ const projects = [
     category: 'E-commerce',
     description: 'Loja online moderna e responsiva para venda de roupas, com foco em experiência do usuário.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '../../media/projects/anon.png',
+    image: '/media/projects/anon.png',
     links: {
       github: '#',
       demo: 'https://ecommerce.hybware.com.br	'
